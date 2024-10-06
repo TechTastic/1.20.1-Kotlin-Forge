@@ -53,7 +53,7 @@ jobs:
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       with:
-        args: ./build/libs/kontraption-*
+        args: ./build/libs/vs_addon_template-*
     - name: Send Embedded Discord Message to VS
       uses: tsickert/discord-webhook@v6.0.0
       with:
@@ -71,4 +71,4 @@ jobs:
       env:
         DISCORD_WEBHOOK: ${{ secrets.VS_DISCORD_WEBHOOK }}
       with:
-        args: ./build/libs/kontraption-*
+        args: ./build/libs/vs_addon_template-*
